@@ -70,7 +70,7 @@ body {
     }
     
     .box.opened {
-      transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
+    transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
     }
     
     .box div {
@@ -164,7 +164,7 @@ body {
     
     
     .hinges {
-      position: absolute;
+    position: absolute;
     z-index: 3;
     transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg);
     }
@@ -184,8 +184,8 @@ body {
     margin-left: -16.25vmin;
     }
     .hinges:after {
-      margin-left: 13.75vmin;
-      margin-top: -24.5vmin;
+    margin-left: 13.75vmin;
+    margin-top: -24.5vmin;
     }
     
     
@@ -199,12 +199,12 @@ body {
     border-radius: 0 0 5px 5px;
     }
     .box > span:after  {
-      margin-left: 36vmin;
+    margin-left: 36vmin;
     }
     
     .box > span {
-      transform: rotateX(89deg) translate(0.3vmin, 0.3vmin);
-      position: absolute;
+    transform: rotateX(89deg) translate(0.3vmin, 0.3vmin);
+    position: absolute;
     }
     
     
@@ -292,7 +292,7 @@ body {
     }
     
     #abort:hover {
-      background: #ffffff;
+    background: #ffffff;
     box-shadow: 0 0 15px 5px #fff;
     }
     
@@ -458,7 +458,7 @@ body {
     
     @keyframes refresh {
     0% { opacity: 0; }
-     50% { opacity: 0; }
+    50% { opacity: 0; }
     100% { opacity: 1; }
     }
     
@@ -489,7 +489,7 @@ body {
     
     
     @keyframes warning-ligth {
-     0% { box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060; }
+    0% { box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060; }
     50% { box-shadow: 0 0 0 100vmin #ff000020, 0 0 0 5vmin #ff000020; }
     }
     
