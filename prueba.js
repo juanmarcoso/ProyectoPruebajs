@@ -36,6 +36,7 @@ const cover = document.getElementById("cover");
 
 // Toggle the 'opened' class on the cover element on click
 cover.addEventListener("click", function () {
+    //this.classList.toggle("close");
     if (this.className == "box") {
         this.classList.add("opened");
     } else {

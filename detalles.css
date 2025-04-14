@@ -8,9 +8,9 @@ body {
     align-items: center;
     overflow: hidden;
     background-color: #151515;
-    }
-    
-    .base {
+}
+
+.base {
     background: #cacaca;
     width: 20vmin;
     border-radius: 27vmin;
@@ -20,9 +20,9 @@ body {
     transform: rotateX(60deg) rotateZ(0deg);
     margin-top: -4.5vmin;
     height: 22vmin;
-    }
-    
-    button#activate {
+}
+
+button#activate {
     background: #d60505;
     border: 0;
     width: 20vmin;
@@ -36,26 +36,29 @@ body {
     top: -2.5vmin;
     border: 0.5vmin solid #af0000a1;
     transition: all 0.25s ease 0s;
-    }
-    
-    button#activate:hover {
+}
+
+button#activate:hover {
     box-shadow: 0 3vmin 0.15vmin 0vmin #af0000, 0 1vmin 0.15vmin 0vmin #af0000;
     top: -1.5vmin;
     transition: all 0.5s ease 0s;
-    }
-    button#activate:active, button#activate.pushed {
+}
+
+button#activate:active,
+button#activate.pushed {
     box-shadow: 0 1vmin 0.15vmin 0vmin #af0000, 0 1vmin 0.15vmin 0vmin #af0000;
     top: 0.5vmin;
     transition: all 0.25s ease 0s;
-    }
-    button#activate.pushed {
+}
+
+button#activate.pushed {
     box-shadow: 0 0 20px 10px #ff3c3c, 0 0 100px 50px #ff2828;
     background: #ff0000;
     border-bottom: 3px solid #00000020;
-    }
-    
-    
-    .box {
+}
+
+
+.box {
     transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg);
     transform-origin: center top;
     transform-style: preserve-3d;
@@ -67,13 +70,13 @@ body {
     cursor: pointer;
     height: 45vmin;
     margin-left: -32vmin;
-    }
-    
-    .box.opened {
+}
+
+.box.opened {
     transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
-    }
-    
-    .box div {
+}
+
+.box div {
     position: absolute;
     width: 45vmin;
     height: 45vmin;
@@ -83,43 +86,48 @@ body {
     border-radius: 3px;
     box-sizing: border-box;
     box-shadow: 0 0 3px 0 #00bcd48a;
-    }
-    
-    .box > div:nth-child(1) {
+}
+
+.box>div:nth-child(1) {
     opacity: 0;
-    }
-    .box > div:nth-child(2) {
+}
+
+.box>div:nth-child(2) {
     transform: rotateX(90deg) translate3d(0px, 5vmin, 5vmin);
     height: 10vmin;
-    }
-    .box > div:nth-child(3) {
+}
+
+.box>div:nth-child(3) {
     transform: rotateX(0deg) translate3d(0, 0, 10vmin);
-    }
-    .box > div:nth-child(4) {
+}
+
+.box>div:nth-child(4) {
     transform: rotateX(270deg) translate3d(0px, -5vmin, 40vmin);
     height: 10vmin;
-    }
-    .box > div:nth-child(5) {
+}
+
+.box>div:nth-child(5) {
     transform: rotateY(90deg) translate3d(-5vmin, 0, 40vmin);
     width: 10vmin;
-    }
-    .box > div:nth-child(6) {
+}
+
+.box>div:nth-child(6) {
     transform: rotateY(-90deg) translate3d(5vmin, 0vmin, 5vmin);
     width: 10vmin;
-    }
-    
-    
-    
-    
-    .grid {
-    background:repeating-linear-gradient(150deg, rgba(255,255,255,0) 0, rgba(255,255,255,0) 49px, rgb(255 255 255 / 10%) 50px ,rgb(0 0 0 / 30%) 51px , rgba(255,255,255,0) 55px ), repeating-linear-gradient(30deg, rgba(255,255,255,0) 0, rgba(255,255,255,0) 49px, rgb(255 255 255 / 10%) 50px ,rgb(0 0 0 / 30%) 51px , rgba(255,255,255,0) 55px );
+}
+
+
+
+
+.grid {
+    background: repeating-linear-gradient(150deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 49px, rgb(255 255 255 / 10%) 50px, rgb(0 0 0 / 30%) 51px, rgba(255, 255, 255, 0) 55px), repeating-linear-gradient(30deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 49px, rgb(255 255 255 / 10%) 50px, rgb(0 0 0 / 30%) 51px, rgba(255, 255, 255, 0) 55px);
     position: fixed;
     width: 200vw;
     height: 150vh;
-    }
-    
-    
-    .warning {
+}
+
+
+.warning {
     position: absolute;
     z-index: 0;
     width: 45vmin;
@@ -127,9 +135,9 @@ body {
     background: repeating-linear-gradient(-45deg, black, black 3vmin, yellow 3vmin, yellow 6vmin);
     transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg);
     box-shadow: 0 0 0 3vmin #af0000;
-    }
-    
-    .warning:before {
+}
+
+.warning:before {
     content: "";
     width: 80%;
     height: 80%;
@@ -140,9 +148,9 @@ body {
     border: 1vmin solid yellow;
     border-radius: 1vmin;
     box-sizing: border-box;
-    }
-    
-    .warning:after {
+}
+
+.warning:after {
     content: "WARNING:\2009 DANGER";
     color: white;
     transform: rotate(90deg);
@@ -157,20 +165,21 @@ body {
     text-align: center;
     padding: 1vmin;
     text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
-    }
-    
-    
-    
-    
-    
-    .hinges {
+}
+
+
+
+
+
+.hinges {
     position: absolute;
     z-index: 3;
     transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg);
-    }
-    
-    
-    .hinges:before, .hinges:after {
+}
+
+
+.hinges:before,
+.hinges:after {
     content: "";
     background: #2b2b2b;
     width: 5vmin;
@@ -182,14 +191,16 @@ body {
     border-radius: 5px 5px 0 0;
     box-sizing: border-box;
     margin-left: -16.25vmin;
-    }
-    .hinges:after {
+}
+
+.hinges:after {
     margin-left: 13.75vmin;
     margin-top: -24.5vmin;
-    }
-    
-    
-    .box > span:before, .box > span:after {
+}
+
+
+.box>span:before,
+.box>span:after {
     content: "";
     width: 5vmin;
     height: 1.5vmin;
@@ -197,21 +208,22 @@ body {
     position: absolute;
     margin-left: 6vmin;
     border-radius: 0 0 5px 5px;
-    }
-    .box > span:after  {
+}
+
+.box>span:after {
     margin-left: 36vmin;
-    }
-    
-    .box > span {
+}
+
+.box>span {
     transform: rotateX(89deg) translate(0.3vmin, 0.3vmin);
     position: absolute;
-    }
-    
-    
-    
-    
-    
-    .text {
+}
+
+
+
+
+
+.text {
     position: absolute;
     margin-top: 55vmin;
     color: white;
@@ -224,10 +236,10 @@ body {
     transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg) translate(33.5vmin, -2vmin);
     text-align: center;
     width: 49vmin;
-    
-    }
-    
-    div#panel:before {
+
+}
+
+div#panel:before {
     content: "WARNING";
     top: 3vmin;
     position: relative;
@@ -237,9 +249,9 @@ body {
     z-index: 6;
     text-shadow: 0 0 1px #fff, 0 0 3px #fff;
     border-bottom: 1vmin dotted #fff;
-    }
-    
-    #panel {
+}
+
+#panel {
     position: absolute;
     background: #ff0000d0;
     color: #ffffff;
@@ -255,17 +267,18 @@ body {
     text-align: center;
     text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff;
     animation: warning-ligth 1s 0s infinite;
-    }
-    #panel.show {
+}
+
+#panel.show {
     display: block !important;
-    }
-    
-    #msg {
+}
+
+#msg {
     margin-top: 5vmin;
     text-shadow: 0 0 2px #fff;
-    }
-    
-    #time {
+}
+
+#time {
     font-size: 10vmin;
     background: #00000080;
     max-width: 35vmin;
@@ -274,13 +287,13 @@ body {
     border-radius: 0.25vmin;
     text-shadow: 0 0 3px #000, 0 0 2px #000, 0 0 3px #000, 0 0 4px #000, 0 0 5px #000;
     padding: 1vmin 0;
-    }
-    
-    #time:before {
-    content: "00:0"; 
-    }
-    
-    #abort {
+}
+
+#time:before {
+    content: "00:0";
+}
+
+#abort {
     background: #ffffffb8;
     color: #d30303;
     cursor: pointer;
@@ -289,37 +302,40 @@ body {
     border-radius: 0.25vmin;
     font-weight: bold;
     animation: highlight 1s 0s infinite;
-    }
-    
-    #abort:hover {
+}
+
+#abort:hover {
     background: #ffffff;
     box-shadow: 0 0 15px 5px #fff;
+}
+
+
+
+
+@keyframes highlight {
+    50% {
+        box-shadow: 0 0 15px 5px #fff;
     }
-    
-    
-    
-    
-    @keyframes highlight {
-    50% { box-shadow: 0 0 15px 5px #fff;}
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    div#turn-off {
+}
+
+
+
+
+
+
+
+
+div#turn-off {
     position: fixed;
     background: #ffffff80;
     left: 0;
     width: 100vw;
     height: 0vh;
     z-index: 7;
-    }
-    
-    div#turn-off:before, div#turn-off:after {
+}
+
+div#turn-off:before,
+div#turn-off:after {
     content: "";
     position: fixed;
     left: 0;
@@ -328,68 +344,75 @@ body {
     background: #000;
     width: 100vw;
     transition: height 0.5s ease 0s;
-    }
-    div#turn-off:after {
+}
+
+div#turn-off:after {
     top: inherit;
     bottom: 0;
-    }
-    
-    
-    div#turn-off.close {
+}
+
+
+div#turn-off.close {
     height: 100vh;
-    }
-    
-    div#turn-off.close:before, div#turn-off.close:after {
+}
+
+div#turn-off.close:before,
+div#turn-off.close:after {
     transition: height 0.1s ease 0.1s;
     height: 49.75vh;
-    }
-    
-    
-    
-    
-    #time.crono {
+}
+
+
+
+
+#time.crono {
     background: #ffffffba;
     transition: background 0.5s ease 0s;
     color: #ff0000;
     text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
-    }
-    #detonate {
+}
+
+#detonate {
     display: none;
     color: #fff;
     z-index: 5;
     font-size: 8vmin;
     font-family: Arial, Helvetica, serif;
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff;
-    }
-    #detonate.show {
+}
+
+#detonate.show {
     display: block;
     animation: blink 0.25s 0s infinite;
-    }
-    
-    #abort.hide {
+}
+
+#abort.hide {
     display: none;
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
     }
-    
-    
-    @keyframes blink {
-    50% { opacity: 0;}
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    #closing {
+}
+
+
+
+
+
+
+
+
+#closing {
     width: 100vw;
     height: 100vh;
     left: 0;
     position: absolute;
-    }
-    
-    div#closing:before, div#closing:after {
+}
+
+div#closing:before,
+div#closing:after {
     content: "";
     width: 50vw;
     height: 1.5vh;
@@ -399,34 +422,35 @@ body {
     background: #000000;
     z-index: 7;
     transition: left 0.2s ease 0s;
-    }
-    
-    div#closing:after {
+}
+
+div#closing:after {
     right: -50vw;
     transition: right 0.2s ease 0s;
     left: initial;
-    }
-    
-    
-    div#closing.close:before {
+}
+
+
+div#closing.close:before {
     left: 0;
     transition: left 0.2s ease 0.2s;
-    }
-    
-    
-    div#closing.close:after {
+}
+
+
+div#closing.close:after {
     right: 0;
     transition: right 0.2s ease 0.2s;
-    }
-    
-    
-    
-    #restart {
+}
+
+
+
+#restart {
     position: absolute;
     z-index: 8;
     display: none;
-    }
-    #reload {
+}
+
+#reload {
     position: absolute;
     z-index: 8;
     width: 10vmin;
@@ -440,30 +464,40 @@ body {
     transform: rotate(0deg);
     transition: transform 0.5s ease 0s;
     outline: none;
-    }
-    #reload:hover {
+}
+
+#reload:hover {
     background: #ef0000;
     transform: rotate(360deg);
     transition: transform 0.5s ease 0s;
+}
+
+#restart.show {
+    display: block;
+}
+
+#restart.show #reload {
+    animation: refresh 3.5s 0s 1;
+    opacity: 1;
+}
+
+
+@keyframes refresh {
+    0% {
+        opacity: 0;
     }
-    #restart.show { 
-    display: block; 
+
+    50% {
+        opacity: 0;
     }
-    
-    #restart.show #reload {  
-    animation: refresh 3.5s 0s 1; 
-    opacity:1;
+
+    100% {
+        opacity: 1;
     }
-    
-    
-    @keyframes refresh {
-    0% { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-    }
-    
-    
-    button#reload:before {
+}
+
+
+button#reload:before {
     content: "";
     width: 6vmin;
     height: 6vmin;
@@ -474,59 +508,64 @@ body {
     border: 1vmin solid #000;
     box-sizing: border-box;
     border-bottom-color: transparent;
-    }
-    
-    button#reload:after {
+}
+
+button#reload:after {
     content: "";
     border: 1.25vmin solid transparent;
     border-top: 2vmin solid black;
     position: absolute;
     transform: rotate(40deg) translate(0.5vmin, 1.25vmin);
+}
+
+
+
+
+
+@keyframes warning-ligth {
+    0% {
+        box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060;
     }
-    
-    
-    
-    
-    
-    @keyframes warning-ligth {
-    0% { box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060; }
-    50% { box-shadow: 0 0 0 100vmin #ff000020, 0 0 0 5vmin #ff000020; }
+
+    50% {
+        box-shadow: 0 0 0 100vmin #ff000020, 0 0 0 5vmin #ff000020;
     }
-    
-    
-    
-    #mute {
-        position: absolute;
-        bottom: 1vmin;
-        right: 1vmin;
-        background: #8bc34a80;
-        width: 6vmin;
-        height: 6vmin;
-        cursor: pointer;
-        border: 0.5vmin solid #151515;
-    }
-    #mute.muted {
-        background: #ff000080;
-    }
-    
-    #mute:before {
-        content: "";
-        border: 0.75vmin solid transparent;
-        height: 2vmin;
-        border-right: 2vmin solid #151515;
-        position: absolute;
-        border-left-width: 0;
-        top: 1.25vmin;
-        right: 1.25vmin;
-    }
-    #mute:after {
-        content: "";
-        border: 0vmin solid transparent;
-        height: 2vmin;
-        border-right: 1.5vmin solid #151515;
-        position: absolute;
-        top: 2vmin;
-        right: 3.5vmin;
-    }
-    
-    
+}
+
+
+
+#mute {
+    position: absolute;
+    bottom: 1vmin;
+    right: 1vmin;
+    background: #8bc34a80;
+    width: 6vmin;
+    height: 6vmin;
+    cursor: pointer;
+    border: 0.5vmin solid #151515;
+}
+
+#mute.muted {
+    background: #ff000080;
+}
+
+#mute:before {
+    content: "";
+    border: 0.75vmin solid transparent;
+    height: 2vmin;
+    border-right: 2vmin solid #151515;
+    position: absolute;
+    border-left-width: 0;
+    top: 1.25vmin;
+    right: 1.25vmin;
+}
+
+#mute:after {
+    content: "";
+    border: 0vmin solid transparent;
+    height: 2vmin;
+    border-right: 1.5vmin solid #151515;
+    position: absolute;
+    top: 2vmin;
+    right: 3.5vmin;
+}
